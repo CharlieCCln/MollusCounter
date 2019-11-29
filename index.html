@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MOLLUS'COUNTER • Recensement participatif des mollusques du littoral</title>
+	<link rel="stylesheet" href="css/styles.css" type="text/css" media="all">
+	<meta name="viewport" content="width=device-width, height=device-height">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.mousewheel.min.js"></script>
+	<script src="js/js.js"></script>
+	<script src="js/jquery.ui.touch-punch.js"></script>
+
+	</script>
+</head>
+<body>
+	<div class="app">
+		<!-- START MENU -->
+		<section class="startmenu">
+			<div class="parent">
+				<div class="startmenutitle">
+					<p class="title" id="mollus">MOLLUS"</p>
+					<p class="title" id="counter">COUNTER</p>
+				</div>
+				<div class="startmenusubtitle">
+					<p class="subtitle" id="startmenusubtitle">RECENSEMENT PARTICIPATIF DES MOLLUSQUES DU LITTORAL</p>
+				</div>
+				<div class="startmenudots">
+					<div class="dot menudot viewdot">
+						<img src="img/view-w.svg" class="view"></img>
+					</div>
+					<div class="dot menudot plusdot">
+						<p class="plus">+</p>
+					</div>
+					<!-- <div class="dot menudot burgerdot">
+					<img src="img/burger-w.svg" class="burger"></img>
+				</div> -->
+			</div>
+			<div class="startmenufooter">
+				<img src="img/mnhn.svg" class="startmenulogo"></img>
+				<img src="img/fnh.svg" class="startmenulogo"></img>
+				<img src="img/cpie.svg" class="startmenulogo"></img>
+				<img src="img/bio.svg" class="startmenulogo"></img>
+			</div>
+		</div>
+	</section>
+	<!-- SPECIES LIST -->
+	<section class="specieslist">
+		<div class="parent">
+			<div class="specieslisttitle">
+				<p class="title" id="reconnaitre">RECONNAÎTRE</p>
+			</div>
+			<div class="specieslistsubtitle">
+				<p class="subtitle" id="specieslistsubtitle">LISTE DES ESPÈCES</p>
+			</div>
+			<div class="species1">
+				<div class="spe1">
+					<p class="subtitle species">HUÎTRE</p>
+					<div class="spe1img"></div>
+				</div>
+				<div class="spe2">
+					<p class="subtitle species">PEIGNE OPERCULÉ</p>
+					<div class="spe2img"></div>
+				</div>
+			</div>
+			<div class="species2">
+				<div class="spe3">
+					<p class="subtitle species">TURRITELLE</p>
+					<div class="spe3img"></div>
+				</div>
+				<div class="spe4">
+					<p class="subtitle species">PRAIRE</p>
+					<div class="spe4img"></div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="dot speciesdotleft retourmenu">
+					<img src="img/arrow-w.svg" class="arrow"></img>
+				</div>
+				<div class="dot speciesdotright plusdot">
+					<p class="plus speciesplus">+</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- FICHE INFO HUÎTRE -->
+	<section class="specieshuitre">
+		<div class="parent speciesparent">
+			<div class="specieshuitretitle">
+				<p class="title" id="huitretitle">HUÎTRE</p>
+			</div>
+			<div class="specieshuitresubtitle">
+				<p class="subtitle" id="huitresubtitle">CRASSOSTREA GIGAS</p>
+			</div>
+			<div class="huitreimg">
+				<img src="img/huitre.svg" class="huitresvg"></img>
+				<a href="#huitrespecificites" class="subtitle speciessubtitle">SPÉCIFICITÉS</a>
+				<br>
+				<a href="#huitrehabitat" class="subtitle speciessubtitle">HABITAT</a>
+				<br>
+				<a href="#huitremesure" class="subtitle speciessubtitle">MESURE</a>
+				<br>
+				<a href="#huitrepoids" class="subtitle speciessubtitle">POIDS</a>
+				<br>
+				<a href="#huitrecouleur" class="subtitle speciessubtitle">COULEUR</a>
+			</div>
+			<div class="speciesinfo">
+				<p class="subtitle speciessubtitle contentsubtitle" id="huitrespecificites">SPÉCIFICITÉS</p>
+				<p class="content speciescontent">L'huître présente une anatomie et une coquille.
+
+					Cette coquille, grande et inéquivalve, est fixée par la valve gauche, qui est généralement bombée, concave, avec l'extrémité antérieure plus ou moins redressée en forme de crochet, alors que la valve droite est plate (dans le langage courant, on parle de valves inférieure et supérieure parce que dans la nature la première repose sur le sol).</p>
+					<p class="subtitle speciessubtitle contentsubtitle" id="huitrehabitat">HABITAT</p>
+					<p class="content speciescontent">L'huître creuse est une des espèces d'estuaire, préférant les couches inférieures des substrats solides où elle mène une existence sédentaire attachée aux rochers, aux débris et aux coquilles à partir de la zone intertidale inférieure à 40 m. Cependant, ces huîtres peuvent également être trouvées sur les fonds vaseux et sablo-vaseux.</p>
+					<p class="subtitle speciessubtitle contentsubtitle" id="huitremesure">MESURE</p>
+					<p class="content speciescontent">Les spécimens adultes de l'huître creuse peuvent généralement mesurer de 8 à 30 cm, avec un record établi à 35,5 cm.</p>
+					<p class="subtitle speciessubtitle contentsubtitle" id="huitrepoids">POIDS</p>
+					<p class="content speciescontent">Les spécimens adultes de l'huître creuse peuvent généralement peser de 80 g à plus d’un kg, avec un record établi à 1,7 kg.</p>
+					<p class="subtitle speciessubtitle contentsubtitle" id="huitrecouleur">COULEUR</p>
+					<p class="content speciescontent">Les huîtres sont généralement blanc cassé, jaunâtre ou gris bleuâtre, avec des tâches plus foncées. L’intérieur de la coquille est blanc perle, ou blanc bleuâtre.</p>
+				</div>
+				<div class="fixed">
+					<div class="footer">
+						<div class="dot speciesdotleft retourliste">
+							<img src="img/arrow-w.svg" class="arrow"></img>
+						</div>
+						<div class="dot speciesdotright plusdot">
+							<p class="plus speciesplus">+</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- FICHE INFO PEIGNE OPERCULÉ -->
+		<section class="speciespeigneopercule">
+			<div class="parent speciesparent">
+				<div class="speciespeigneoperculetitle">
+					<p class="title peigneoperculetitle" id="peigne">PEIGNE</p>
+					<br>
+					<p class="title peigneoperculetitle" id="opercule">OPERCULÉ</p>
+				</div>
+				<div class="speciespeigneoperculesubtitle">
+					<p class="subtitle" id="peigneoperculesubtitle">CHLAMYS OPERCULARIS</p>
+				</div>
+				<div class="peigneoperculeimg">
+					<img src="img/peigneopercule.svg" class="peigneoperculesvg"></img>
+					<a href="#peigneoperculespecificites" class="subtitle speciessubtitle">SPÉCIFICITÉS</a>
+					<br>
+					<a href="#peigneoperculehabitat" class="subtitle speciessubtitle">HABITAT</a>
+					<br>
+					<a href="#peigneoperculemesure" class="subtitle speciessubtitle">MESURE</a>
+					<br>
+					<a href="#peigneoperculepoids" class="subtitle speciessubtitle">POIDS</a>
+					<br>
+					<a href="#peigneoperculecouleur" class="subtitle speciessubtitle">COULEUR</a>
+				</div>
+				<div class="speciesinfo">
+					<p class="subtitle speciessubtitle" id="peigneoperculespecificites">SPÉCIFICITÉS</p>
+					<p class="content speciescontent">Les deux valves du peigne operculé sont convexes, la valve supérieure étant un peu moins creuse que la valve inférieure, et quasiment circulaires. Elles comportent une vingtaine de côtes. Les oreilles sont légèrement asymétriques. La coloration du vanneau est crème marbré de brun rougeâtre plus ou moins foncé. Les jeunes vivent fixés sur des pierres ou graviers par un byssus alors que les adultes sont libres et peuvent nager rapidement en claquant leurs valves.</p>
+					<p class="subtitle speciessubtitle" id="peigneoperculehabitat">HABITAT</p>
+					<p class="content speciescontent">Le peigne operculé vit au bas de l’estran jusqu’à 100 m de profondeur, parfois jusqu’à -200m. Les juvéniles vivent fixés sur des rochers ou autres coquillages puis se détachent à l’âge adulte (1,5 à 2 cm) pour vivre librement sur des fonds meubles (sable, graviers, débris coquilliers).</p>
+					<p class="subtitle speciessubtitle" id="peigneoperculemesure">MESURE</p>
+					<p class="content speciescontent">Les spécimens adultes du peigne operculé peuvent généralement mesurer de 5 à 10 cm.</p>
+					<p class="subtitle speciessubtitle" id="peigneoperculepoids">POIDS</p>
+					<p class="content speciescontent">Les spécimens adultes du peigne operculé peuvent généralement peser de 50 à 100 g.</p>
+					<p class="subtitle speciessubtitle" id="peigneoperculecouleur">COULEUR</p>
+					<p class="content speciescontent">Le peigne operculé possède des couleurs très variables : du rose pâle au marron, orange, jaune, marqué par des bandes, zig-zags, raies ou points plus foncés ou plus clairs.</p>
+				</div>
+				<div class="footer">
+					<div class="dot speciesdotleft retourliste">
+						<img src="img/arrow-w.svg" class="arrow"></img>
+					</div>
+					<div class="dot speciesdotright plusdot">
+						<p class="plus speciesplus">+</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- FICHE INFO TURRITELLE -->
+		<section class="speciesturritelle">
+			<div class="parent speciesparent">
+				<div class="speciesturritelletitle">
+					<p class="title" id="turritelletitle">TURRITELLE</p>
+				</div>
+				<div class="speciesturritellesubtitle">
+					<p class="subtitle" id="turritellesubtitle">TURRITELLA COMMUNIS</p>
+				</div>
+				<div class="turritelleimg">
+					<img src="img/turritelle.svg" class="turritellesvg"></img>
+					<a href="#turritellespecificites" class="subtitle speciessubtitle">SPÉCIFICITÉS</a>
+					<br>
+					<a href="#turritellehabitat" class="subtitle speciessubtitle">HABITAT</a>
+					<br>
+					<a href="#turritellemesure" class="subtitle speciessubtitle">MESURE</a>
+					<br>
+					<a href="#turritellepoids" class="subtitle speciessubtitle">POIDS</a>
+					<br>
+					<a href="#turritellecouleur" class="subtitle speciessubtitle">COULEUR</a>
+				</div>
+				<div class="speciesinfo">
+					<p class="subtitle speciessubtitle" id="turritellespecificites">SPÉCIFICITÉS</p>
+					<p class="content speciescontent">La turritelle possède une coquille haute, conique et pointue, avec entre 16 et 20 volutes tuméfiées. Des stries en spirales peuvent apparaitre, dont 3 à 6 plus importantes que les autres. Certaines lignes de croissance peuvent croiser ces stries et donner une apparence ornée de perles à la coquille.
+						L’ouverture est de petite taille, anguleuse.</p>
+						<p class="subtitle speciessubtitle" id="turritellehabitat">HABITAT</p>
+						<p class="content speciescontent">La turritelle vit en général près du littoral, jusqu’à 220m de profondeur, sur le sable.</p>
+						<p class="subtitle speciessubtitle" id="turritellemesure">MESURE</p>
+						<p class="content speciescontent">Les spécimens adultes de turritelle mesurent généralement 3 cm de haut pour 1 cm de large, mais peuvent atteindre 5,5 x 1,6 cm.</p>
+						<p class="subtitle speciessubtitle" id="turritellepoids">POIDS</p>
+						<p class="content speciescontent">Les spécimens adultes de turritelle ne pèsent qu’une vingtaine de grammes.</p>
+						<p class="subtitle speciessubtitle" id="turritellecouleur">COULEUR</p>
+						<p class="content speciescontent">De couleur beige, avec des stries claires. Teinte parfois lilas sur la base.</p>
+					</div>
+					<div class="footer">
+						<div class="dot speciesdotleft retourliste">
+							<img src="img/arrow-w.svg" class="arrow"></img>
+						</div>
+						<div class="dot speciesdotright plusdot">
+							<p class="plus speciesplus">+</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- FICHE INFO PRAIRE -->
+			<section class="speciespraire">
+				<div class="parent speciesparent">
+					<div class="speciesprairetitle">
+						<p class="title" id="prairetitle">PRAIRE</p>
+					</div>
+					<div class="speciesprairesubtitle">
+						<p class="subtitle" id="prairesubtitle">VENUS VERRUCOSA</p>
+					</div>
+					<div class="praireimg">
+						<img src="img/praire.svg" class="prairesvg"></img>
+						<a href="#prairespecificites" class="subtitle speciessubtitle">SPÉCIFICITÉS</a>
+						<br>
+						<a href="#prairehabitat" class="subtitle speciessubtitle">HABITAT</a>
+						<br>
+						<a href="#prairemesure" class="subtitle speciessubtitle">MESURE</a>
+						<br>
+						<a href="#prairepoids" class="subtitle speciessubtitle">POIDS</a>
+						<br>
+						<a href="#prairecouleur" class="subtitle speciessubtitle">COULEUR</a>
+					</div>
+					<div class="speciesinfo">
+						<p class="subtitle speciessubtitle" id="prairespecificites">SPÉCIFICITÉS</p>
+						<p class="content speciescontent">Le praire possède une coquille ovale, tuméfiée, rugueuse, avec des stries concentriques et proéminentes. Ces stries deviennent des verrues sur les bords de la coquille de praires âgés.</p>
+						<p class="subtitle speciessubtitle" id="prairehabitat">HABITAT</p>
+						<p class="content speciescontent">Le praire vit près du littoral, jusqu’à environ 100m de profondeur, dans le sable et le gravier.</p>
+						<p class="subtitle speciessubtitle" id="prairemesure">MESURE</p>
+						<p class="content speciescontent">Les spécimens adultes de praire mesurent jusqu’à 6cm de diamètre.</p>
+						<p class="subtitle speciessubtitle" id="prairepoids">POIDS</p>
+						<p class="content speciescontent">Les spécimens adultes de praire pèsent entre 40 et 75 grammes.</p>
+						<p class="subtitle speciessubtitle" id="prairecouleur">COULEUR</p>
+						<p class="content speciescontent">Les praires tendent généralement du blanc cassé au brun clair, avec des bandes plus foncées partant de la jonction des valves vers l’extérieur. </p>
+					</div>
+					<div class="footer">
+						<div class="dot speciesdotleft retourliste">
+							<img src="img/arrow-w.svg" class="arrow"></img>
+						</div>
+						<div class="dot speciesdotright plusdot">
+							<p class="plus speciesplus">+</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- COMPTAGE - RENSEIGNEMENTS -->
+			<section class="comptagerenseignements">
+				<div class="parent">
+					<div class="comptagetitle">
+						<p class="title comptagetitle">COMPTAGE</p>
+					</div>
+					<div class="renseignementssubtitle">
+						<p class="subtitle renseignementssubtitle">RENSEIGNEMENTS</p>
+					</div>
+					<div class="renseignements">
+						<div class="content renseignementscontent dateheure" id="dateheure">Date & Heure</div>
+						<div class="content renseignementscontent position" id="position">Position</div>
+						<div class="content renseignementscontent milieu" id="milieu">Milieu</div>
+						<div class="content renseignementscontent meteo" id="meteo">Météo</div>
+						<div class="content renseignementscontent espece" id="espece">Espèce</div>
+						<div class="renseignementsscreen">
+							<div class="content dateheurecontent">
+								<script>
+								var currentdate = new Date();
+								var datetime = "" + currentdate.getDate() + "/"
+								+ (currentdate.getMonth()+1)  + "/"
+								+ currentdate.getFullYear() + " | "
+								+ currentdate.getHours() + ":"
+								+ currentdate.getMinutes() + ":"
+								+ currentdate.getSeconds();
+
+								document.write(datetime);
+								</script>
+							</div>
+							<div class="content positioncontent">
+								<button onclick="getLocation()" class="content gpsbutton">Vos coordonnées GPS</button>
+
+								<p id="demo"></p>
+								<script>
+								var x = document.getElementById("demo");
+								function getLocation() {
+									if (navigator.geolocation) {
+										navigator.geolocation.getCurrentPosition(showPosition);
+									} else {
+										x.innerHTML = "Geolocation is not supported by this browser.";
+									}
+								}
+
+								function showPosition(position) {
+									x.innerHTML = "Latitude: " + position.coords.latitude +
+									"<br>Longitude: " + position.coords.longitude;
+									document.getElementById("position").innerHTML = position.coords.latitude +
+									", " + position.coords.longitude;
+									document.getElementById("position").style.color = "white";
+									document.getElementById("position").style.backgroundColor = "black";
+								}
+								</script>
+							</div>
+							<div class="content milieucontent">
+								<img src="img/rock.svg" class="rock"></img>
+								<img src="img/wave.svg" class="wave"></img>
+								<img src="img/coast.svg" class="coast"></img>
+							</div>
+							<div class="content meteocontent">
+								<div class="meteocontent1">
+									<img src="img/suncloud.svg" class="suncloud"></img>
+									<img src="img/lightning.svg" class="lightning"></img>
+									<img src="img/snow.svg" class="snow"></img>
+								</div>
+								<div class="meteocontent2">
+									<img src="img/sun.svg" class="sun"></img>
+									<img src="img/rain.svg" class="rain"></img>
+								</div>
+							</div>
+							<div class="content espececontent">
+								<div class="espececontent1">
+									<div class="espececontenthuitre">
+										<p class="subtitle espececontentsubtitle">HUITRE</p>
+										<img src="img/huitre.svg" class="espececontentimg"></img>
+									</div>
+									<div class="espececontentpeigneopercule">
+										<p class="subtitle espececontentsubtitle">PEIGNE<br>OPERCULÉ</p>
+										<img src="img/peigneopercule.svg" class="espececontentimg"></img>
+									</div>
+									<div class="espececontentturritelle">
+										<p class="subtitle espececontentsubtitle">TURRITELLE</p>
+										<img src="img/turritelle.svg" class="espececontentimg"></img>
+									</div>
+								</div>
+								<div class="espececontent2">
+									<div class="espececontentpraire">
+										<p class="subtitle espececontentsubtitle">PRAIRE</p>
+										<img src="img/praire.svg" class="espececontentimg"></img>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer">
+						<div class="dot speciesdotleft retourmenu">
+							<img src="img/arrow-w.svg" class="arrow"></img>
+						</div>
+						<div class="comptagebutton commencer">
+							<p class="subtitle">COMMENCER</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- COMPTAGE - RECENSEMENT -->
+			<section class="comptagerecensement">
+				<div class="parent">
+					<div class="comptagetitle">
+						<p class="title comptagetitle">COMPTAGE</p>
+					</div>
+					<div class="recensementsubtitle">
+						<p class="subtitle recensementsubtitle">RECENSEMENT</p>
+					</div>
+					<div class="compteurcontainer">
+						<div class="compteur">
+							<p class="subtitle sex">M</p>
+							<p class="content number" id="numbermale">0</p>
+						</div>
+						<div class="compteur">
+							<p class="subtitle sex">F</p>
+							<p class="content number" id="numberfemale">0</p>
+						</div>
+						<div class="compteur">
+							<p class="subtitle sex">H</p>
+							<p class="content number" id="numberherma">0</p>
+						</div>
+					</div>
+					<div class="molettescontainer">
+						<div class="molette" data-nombre="numbermale">
+							<img src="img/arrow.svg" class="toparrow"></img>
+							<img src="img/scroll.svg" class="scroll"></img>
+							<img src="img/arrow.svg" class="downarrow"></img>
+						</div>
+						<div class="molette" data-nombre="numberfemale">
+							<img src="img/arrow.svg" class="toparrow"></img>
+							<img src="img/scroll.svg" class="scroll"></img>
+						<img src="img/arrow.svg" class="downarrow"></img>
+					</div>
+					<div class="molette" data-nombre="numberherma">
+						<img src="img/arrow.svg" class="toparrow"></img>
+						<img src="img/scroll.svg" class="scroll"></img>
+					<img src="img/arrow.svg" class="downarrow"></img>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="dot speciesdot retourrenseignements">
+					<img src="img/arrow-w.svg" class="arrow"></img>
+				</div>
+				<div class="button comptagebutton valider">
+					<p class="subtitle">VALIDER</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- COMPTAGE - COMMENTAIRES -->
+	<section class="comptagecommentaires">
+		<div class="parent commentairesparent">
+			<div class="commentairestitle">
+				<p class="title">COMMENTAIRES</p>
+			</div>
+			<div class="content commentaires">
+				<textarea class="textinput" id="textinput" placeholder="Quelque chose à ajouter ? ..."></textarea>
+			</div>
+			<div class="commentairesfooter">
+				<div class="button1">
+					<div class="dot speciesdot retourrecensement">
+						<img src="img/arrow-w.svg" class="arrow"></img>
+					</div>
+					<div class="subtitle comptagebutton envoyer" id="envoyer">
+						ENVOYER
+					</div>
+					<div class="dot speciesdot retourmenu homedot">
+						<img src="img/home.svg" class="home"></img>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- LISTE DES COMPTAGES
+	<section class="comptageslist">
+	<div class="parent">
+	<div class="comptageslisttitle">
+	<p class="title recensements">RECENSEMENTS</p>
+</div>
+<div class="comptageslistsubtitle">
+<p class="subtitle speciessubtitle">LISTE DES COMPTAGES</p>
+</div>
+<div class="species1">
+<div class="spe1">
+<p class="subtitle species">HUÎTRE</p>
+<div class="spe1img"></div>
+</div>
+<div class="spe2">
+<p class="subtitle species">PEIGNE OPERCULÉ</p>
+<div class="spe2img"></div>
+</div>
+</div>
+<div class="species2">
+<div class="spe3">
+<div class="dot alert">!</div>
+<p class="subtitle species">TURRITELLE</p>
+<div class="spe3img"></div>
+</div>
+<div class="spe4">
+<p class="subtitle species">PRAIRE</p>
+<div class="spe4img"></div>
+</div>
+</div>
+<div class="footer">
+<div class="dot speciesdotleft retourmenu">
+<img src="img/arrow-w.svg" class="arrow"></img>
+</div>
+</div>
+</div>
+</section> -->
+</div>
+</body>
+
+</html>

@@ -1,0 +1,746 @@
+/* GENERAL */
+
+@font-face {
+  font-family: "Lment-v02";
+  src: url('../font/Lment-v02.otf');
+}
+
+@font-face {
+  font-family:"Grotesk";
+  src: url("../font/Grotesk.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SportingGrotesque-Regular";
+  src: url("../font/SportingGrotesque-Regular.otf") format("opentype");
+}
+
+body{
+  height:auto;
+}
+
+.app{
+  height: auto;
+}
+
+.parent{
+  background-color: white;
+  margin-left: 50px;
+  bottom: 0;
+  margin-right: 50px;
+  padding-top: 175px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height:auto;
+  margin-bottom: 110px;
+}
+
+.title{
+  text-align: center;
+  font-family: "Lment-v02", Arial, sans-serif;
+  line-height: 0pt;
+}
+
+.subtitle{
+  text-align: center;
+  font-family: "Grotesk", Arial, sans-serif;
+}
+
+.dot{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: black;
+  float: left;
+  display: flex ;
+  justify-content:center;
+  align-items: center;
+}
+
+.dot:hover{
+  cursor: pointer;
+}
+
+.view{
+  color: white;
+  width: 40px;
+  height: auto;
+  margin-left: 10px;
+}
+
+.plus{
+  color: white;
+  font-size: 60px;
+  margin-top: 60px;
+  margin-left: 12.5px;
+}
+
+.burger{
+  width: 40px;
+  margin-left: 10px;
+  margin-top: 2.5px;
+}
+
+.arrow{
+  width: 30px;
+  margin-right: 5px;
+}
+
+.speciessubtitle{
+  font-size: 16px;
+}
+
+.contentsubtitle{
+  display: inline;
+  left: 0;
+}
+
+.content{
+  font-family: "SportingGrotesque-Regular";
+}
+
+.speciescontent{
+  font-size: 12pt;
+}
+
+.footer{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button{
+  font-family: "SportingGrotesque-Regular";
+  font-size: 12pt;
+  padding:5px;
+  color: black;
+  background-color: white;
+  text-align: center;
+  text-decoration: none;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+  border-left: none;
+  border-right: none;
+}
+
+button:hover{
+  cursor: pointer;
+  color: white;
+  background-color: black;
+}
+
+/* START MENU */
+
+.startmenu{
+  position: absolute;
+  background-image: url("huitre-w.svg");
+  background-size:1000px;
+  background-position: top center;
+  background-repeat: repeat;
+  height: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.startmenudots{
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  height: 295px;
+}
+
+#mollus{
+  padding-top: 0px;
+  font-size: 30pt;
+  margin-bottom: 0px;
+}
+
+#counter{
+  font-size: 24pt;
+  margin-top: 36px;
+  margin-bottom: 0px;
+}
+
+#startmenusubtitle{
+  font-size: 12pt;
+  letter-spacing: -1pt;
+  padding-top: 25px;
+}
+
+.menudot{
+  margin:0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menudot + .menudot{
+  margin-left: 2.5%;
+}
+
+.startmenufooter{
+  bottom:0;
+  left:0;
+  width: 100%;
+  padding-bottom: 50px;
+  position: fixed;
+  display:flex;
+  justify-content: center;
+  margin-right: 50px;
+}
+
+.startmenulogo{
+  height: 30px;
+  width: auto;
+  float: left;
+  padding:0;
+}
+
+/* SPECIES LIST */
+
+.specieslist{
+  position: absolute;
+  background-image: url("huitre-w.svg");
+  background-size:1000px;
+  background-position: top center;
+  background-repeat: repeat;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+#reconnaitre{
+  font-size: 20pt;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-top: -100px;
+}
+
+#specieslistsubtitle{
+  font-size: 12pt;
+}
+
+.species1, .species2{
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding-top:25px;
+  left: 0;
+  right: 0;
+}
+
+.species2{
+  height: 375px;
+}
+
+.spe1, .spe2, .spe3, .spe4{
+  width: 50%;
+  height: 150px;
+  border-top: solid 1px black;
+  margin-left:2%;
+  margin-bottom: 50px;
+  margin-right:2%;
+}
+
+.spe3, .spe4{
+  height: 300px;
+}
+
+.spe1:hover, .spe2:hover, .spe3:hover, .spe4:hover{
+  cursor: pointer;
+}
+
+.spe1img, .spe2img, .spe3img, .spe4img{
+  width: 100%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.spe1img{
+  background-image: url("huitre.svg");
+  background-size: 125% 175px;
+  margin-top: -37.5px;
+}
+
+.spe2img{
+  background-image: url("peigneopercule.svg");
+  background-size: 100% 150px;
+  margin-top: -10px;
+}
+
+.spe3img{
+  background-image: url("turritelle.svg");
+  background-size: 100% 150px;
+  margin-top: 15px;
+}
+
+.spe4img{
+  background-image: url("praire.svg");
+  background-size: 100% 200px;
+}
+
+.species{
+  font-size: 12pt;
+  padding-top: 15px;
+}
+
+.speciesplus{
+  margin-right: 12.5px;
+}
+
+/* FICHE INFO HUÎTRE */
+
+.specieshuitre{
+  background-image: url("huitre-w.svg");
+  background-size:1000px;
+  background-position: top center;
+  background-repeat: repeat;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#huitretitle{
+  font-size: 36pt;
+  margin-top: -100px;
+}
+
+#huitresubtitle{
+  font-size: 16pt;
+}
+
+.huitreimg, .peigneoperculeimg, .turritelleimg, .praireimg{
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.huitresvg{
+  width: 100%;
+  max-height: 300px;
+  left: 0;
+  right: 0;
+  margin-bottom: 25px;
+}
+
+/* FICHE INFO PEIGNE OPERCULÉ */
+
+.speciespeigneopercule{
+  background-image: url("peigneopercule-w.svg");
+  background-size:1000px;
+  background-position: top center;
+  background-repeat: repeat;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.speciespeigneoperculetitle{
+  height: 75px;
+}
+
+.peigneoperculetitle{
+  font-size: 24pt;
+  margin-top: -100px;
+}
+
+#opercule{
+  margin-top: -5px;
+}
+
+#peigneoperculesubtitle{
+  font-size: 16pt;
+}
+
+.peigneoperculesvg{
+  width: 100%;
+  max-height: 300px;
+  left: 0;
+  right: 0;
+  margin-bottom: 25px;
+}
+
+/* FICHE INFO TURRITELLE */
+
+.speciesturritelle{
+  background-image: url("turritelle-w.svg");
+  background-size:1000px;
+  background-position: top center;
+  background-repeat: repeat;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#turritelletitle{
+  font-size: 30pt;
+  margin-top: -100px;
+}
+
+#turritellesubtitle{
+  font-size: 16pt;
+}
+
+.turritellesvg{
+  width: 100%;
+  max-height: 300px;
+  left: 0;
+  right: 0;
+  margin-bottom: 25px;
+}
+
+/* FICHE INFO PRAIRE */
+
+.speciespraire{
+  background-image: url("praire-w.svg");
+  background-size:1000px;
+  background-position: top center;
+  background-repeat: repeat;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#prairetitle{
+  font-size: 36pt;
+  margin-top: -100px;
+}
+
+#prairesubtitle{
+  font-size: 16pt;
+}
+
+.prairesvg{
+  width: 100%;
+  max-height: 300px;
+  left: 0;
+  right: 0;
+  margin-bottom: 25px;
+}
+
+/* COMPTAGE - RENSEIGNEMENTS */
+
+.comptagerenseignements{
+  position: absolute;
+  background-image: url("huitre-w.svg");
+  background-size:1000px;
+  background-position: top center;
+  background-repeat: repeat;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.renseignements{
+  padding-bottom: 50px;
+}
+
+.comptagetitle{
+  font-size: 30pt;
+  margin-top: -100px;
+}
+
+.renseignementssubtitle{
+  font-size: 16pt;
+}
+
+.renseignementscontent{
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+  font-size: 12pt;
+  margin-top:15px;
+  width: 100%;
+}
+
+.renseignementscontent:hover{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+.renseignementsscreen{
+  width: 100%;
+  height: 200px;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+  margin-top: 15px;
+  padding-top: -7.5px;
+}
+
+.dateheurecontent, .positioncontent{
+  font-family: "SportingGrotesque-Regular";
+  font-size: 12pt;
+  margin-top: 15px;
+}
+
+.milieucontent, .meteocontent1, .meteocontent2, .espececontent1, .espececontent2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 7.5px;
+}
+
+.espececontent1, .espececontent2{
+  margin-top: 3.75px;
+}
+
+.rock, .wave, .coast, .suncloud, .lightning, .snow, .sun, .rain{
+  height: 75px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.rock, .wave, .coast{
+  margin-top:50px;
+}
+
+.espececontenthuitre, .espececontentpeigneopercule, .espececontentturritelle, .espececontentpraire{
+  height: 75px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.espececontentpraire{
+  margin-left: 0px;
+}
+
+.espececontentsubtitle{
+  font-size: 8pt;
+}
+
+.espececontentimg{
+  height: 35px;
+}
+
+
+.comptagebutton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border-radius: 50px;
+  height: 60px;
+  width:calc(100% - 85px);
+  margin: 0;
+  color: white;
+}
+
+.comptagebutton:hover{
+  cursor: pointer;
+}
+
+/* COMPTAGE - RECENSEMENT */
+
+.comptagerecensement{
+  position: absolute;
+  background-image: url("huitre-w.svg");
+  background-size:1000px;
+  background-position: top center;
+  background-repeat: repeat;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.recensementsubtitle{
+  font-size: 16pt;
+}
+
+.compteurcontainer{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+}
+
+.compteur{
+  width: 33%;
+  height: 100px;
+  left: 0;
+  text-align: center;
+}
+
+.molettescontainer{
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+  height: 500px;
+}
+
+.molette{
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  width: 33%;
+  margin-top: -25px;
+  margin-bottom: 25px;
+  left: 0;
+  right: 0;
+}
+
+.toparrow, .downarrow, .scroll{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.toparrow, .downarrow{
+  width: 25px;
+  height:auto;
+}
+
+.toparrow{
+  transform: rotate(90deg);
+}
+
+.downarrow{
+  transform: rotate(-90deg);
+}
+
+.scroll{
+  width: auto;
+  height: 200px;
+}
+
+
+/* COMPTAGE - COMMENTAIRES */
+
+.comptagecommentaires{
+  background-image: url("huitre-w.svg");
+  background-size:1000px;
+  background-position: top center;
+  background-repeat: repeat;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.commentairestitle{
+  font-size: 20pt;
+  margin-top: -100px;
+}
+
+.commentaires{
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+  width: 100%;
+  height: 450px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  padding-top: 7.5px;
+  color: grey;
+  font-size: 12pt;
+}
+
+.textinput {
+  float: left;
+  width: 100%;
+  height: 375px;
+  outline: none;
+  resize: none;
+  border: none;
+}
+
+placeholder{
+  font-family: "SportingGrotesque-Regular";
+  font-size: 12pt;
+}
+
+.commentairesfooter{
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 25px;
+}
+
+.button1, .button2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.enregistrer{
+  width: 100%;
+}
+
+.home{
+  width: 30px;
+  height: 30px;
+  margin-top: -2.5px;
+}
+
+/* LISTE DES COMPTAGES */
+
+.comptageslist{
+  background-image: url("huitre-w.svg");
+  background-size:1000px;
+  background-position: top center;
+  background-repeat: repeat;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.recensements{
+  font-size: 18pt;
+  margin-top: -100px;
+}
+
+.alert{
+  width: 15px;
+  height: 15px;
+  font-size: 10pt;
+  color: white;
+  margin-top: 25px;
+  margin-left: 5px;
+  margin-right: 5px;
+  position: absolute;
+}
