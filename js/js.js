@@ -134,6 +134,10 @@ function clickRetourMenu(){
   $(".milieucontent").hide()
   $(".meteocontent").hide()
   $(".espececontent").hide()
+  document.getElementById("numbermale").innerHTML = "0";
+  document.getElementById("numberfemale").innerHTML = "0";
+  document.getElementById("numberherma").innerHTML = "0";
+  document.getElementById("textinput").innerHTML = "";
 }
 
 function clickHuitre(){
