@@ -289,3 +289,14 @@ function clickEnvoyer(){
   document.getElementById("envoyer").innerHTML = "ENVOYÉ !";
   document.getElementById("envoyer").style.width = "calc(100% - 170px)";
 }
+
+function preventDefault(e){
+    e.preventDefault();
+}
+
+function disableScroll(){
+    document.body.addEventListener('touchmove', preventDefault, { passive: false });
+}
+function enableScroll(){
+    document.body.removeEventListener('touchmove', preventDefault);
+}
