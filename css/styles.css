@@ -21,6 +21,7 @@ body{
 
 .app{
   height: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .parent{
