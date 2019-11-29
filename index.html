@@ -10,6 +10,7 @@
 	<script src="js/jquery.mousewheel.min.js"></script>
 	<script src="js/js.js"></script>
 	<script src="js/jquery.ui.touch-punch.js"></script>
+
 </head>
 <body>
 	<div class="app">
@@ -388,68 +389,68 @@
 					</div>
 					<div class="molettescontainer">
 						<div class="molette" data-nombre="numbermale">
-							<img src="img/arrow.svg" class="toparrow"></img>
+							<img src="img/arrow.svg" class="toparrow" data-nombre="numbermale"></img>
 							<img src="img/scroll.svg" class="scroll"></img>
-							<img src="img/arrow.svg" class="downarrow"></img>
+							<img src="img/arrow.svg" class="downarrow" data-nombre="numbermale"></img>
 						</div>
 						<div class="molette" data-nombre="numberfemale">
-							<img src="img/arrow.svg" class="toparrow"></img>
+							<img src="img/arrow.svg" class="toparrow" data-nombre="numberfemale"></img>
 							<img src="img/scroll.svg" class="scroll"></img>
-						<img src="img/arrow.svg" class="downarrow"></img>
+							<img src="img/arrow.svg" class="downarrow" data-nombre="numberfemale"></img>
+						</div>
+						<div class="molette" data-nombre="numberherma">
+							<img src="img/arrow.svg" class="toparrow" data-nombre="numberherma"></img>
+							<img src="img/scroll.svg" class="scroll"></img>
+							<img src="img/arrow.svg" class="downarrow" data-nombre="numberherma"></img>
+						</div>
 					</div>
-					<div class="molette" data-nombre="numberherma">
-						<img src="img/arrow.svg" class="toparrow"></img>
-						<img src="img/scroll.svg" class="scroll"></img>
-					<img src="img/arrow.svg" class="downarrow"></img>
+					<div class="footer">
+						<div class="dot speciesdot retourrenseignements">
+							<img src="img/arrow-w.svg" class="arrow"></img>
+						</div>
+						<div class="button comptagebutton valider">
+							<p class="subtitle">VALIDER</p>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="footer">
-				<div class="dot speciesdot retourrenseignements">
-					<img src="img/arrow-w.svg" class="arrow"></img>
+			</section>
+			<!-- COMPTAGE - COMMENTAIRES -->
+			<section class="comptagecommentaires">
+				<div class="parent commentairesparent">
+					<div class="commentairestitle">
+						<p class="title">COMMENTAIRES</p>
+					</div>
+					<div class="content commentaires">
+						<textarea class="textinput" id="textinput" placeholder="Quelque chose à ajouter ? ..."></textarea>
+					</div>
+					<div class="commentairesfooter">
+						<div class="button1">
+							<div class="dot speciesdot retourrecensement">
+								<img src="img/arrow-w.svg" class="arrow"></img>
+							</div>
+							<div class="subtitle comptagebutton envoyer" id="envoyer">
+								ENVOYER
+							</div>
+							<div class="dot speciesdot retourmenu homedot">
+								<img src="img/home.svg" class="home"></img>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="button comptagebutton valider">
-					<p class="subtitle">VALIDER</p>
-				</div>
-			</div>
+			</section>
+			<!-- LISTE DES COMPTAGES
+			<section class="comptageslist">
+			<div class="parent">
+			<div class="comptageslisttitle">
+			<p class="title recensements">RECENSEMENTS</p>
 		</div>
-	</section>
-	<!-- COMPTAGE - COMMENTAIRES -->
-	<section class="comptagecommentaires">
-		<div class="parent commentairesparent">
-			<div class="commentairestitle">
-				<p class="title">COMMENTAIRES</p>
-			</div>
-			<div class="content commentaires">
-				<textarea class="textinput" id="textinput" placeholder="Quelque chose à ajouter ? ..."></textarea>
-			</div>
-			<div class="commentairesfooter">
-				<div class="button1">
-					<div class="dot speciesdot retourrecensement">
-						<img src="img/arrow-w.svg" class="arrow"></img>
-					</div>
-					<div class="subtitle comptagebutton envoyer" id="envoyer">
-						ENVOYER
-					</div>
-					<div class="dot speciesdot retourmenu homedot">
-						<img src="img/home.svg" class="home"></img>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- LISTE DES COMPTAGES
-	<section class="comptageslist">
-	<div class="parent">
-	<div class="comptageslisttitle">
-	<p class="title recensements">RECENSEMENTS</p>
-</div>
-<div class="comptageslistsubtitle">
-<p class="subtitle speciessubtitle">LISTE DES COMPTAGES</p>
-</div>
-<div class="species1">
-<div class="spe1">
-<p class="subtitle species">HUÎTRE</p>
-<div class="spe1img"></div>
+		<div class="comptageslistsubtitle">
+		<p class="subtitle speciessubtitle">LISTE DES COMPTAGES</p>
+	</div>
+	<div class="species1">
+	<div class="spe1">
+	<p class="subtitle species">HUÎTRE</p>
+	<div class="spe1img"></div>
 </div>
 <div class="spe2">
 <p class="subtitle species">PEIGNE OPERCULÉ</p>
