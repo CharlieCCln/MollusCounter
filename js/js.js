@@ -63,6 +63,24 @@ $(document).ready(function(){
     $('#'+nombreElement).text(nombre);
   });
 
+  $('.toparrow').on('click', function(event) {
+    var nombreElement = $(this).data('nombre');
+    var nombre = parseInt($('#'+nombreElement).text());
+    nombre++;
+    nombre = Math.max(nombre, 0);
+
+    $('#'+nombreElement).text(nombre);
+  });
+
+  $('.downarrow').on('click', function(event) {
+    var nombreElement = $(this).data('nombre');
+    var nombre = parseInt($('#'+nombreElement).text());
+    nombre--;
+    nombre = Math.max(nombre, 0);
+
+    $('#'+nombreElement).text(nombre);
+  });
+
 })
 
 function clickView(){
@@ -288,15 +306,4 @@ function clickEnvoyer(){
   $(".homedot").show()
   document.getElementById("envoyer").innerHTML = "ENVOYÉ !";
   document.getElementById("envoyer").style.width = "calc(100% - 170px)";
-}
-
-function preventDefault(e){
-    e.preventDefault();
-}
-
-function disableScroll(){
-    document.body.addEventListener('touchmove', preventDefault, { passive: false });
-}
-function enableScroll(){
-    document.body.removeEventListener('touchmove', preventDefault);
 }
