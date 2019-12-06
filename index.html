@@ -8,8 +8,10 @@
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
 	<script src="js/jquery.mousewheel.min.js"></script>
-	<script src="js/js.js"></script>
 	<script src="js/jquery.ui.touch-punch.js"></script>
+	<script src="js/hammer.min.js"></script>
+	<script src="js/js.js"></script>
+
 
 </head>
 <body>
@@ -376,7 +378,7 @@
 					<div class="compteurcontainer">
 						<div class="compteur">
 							<p class="subtitle sex">M</p>
-							<p class="content number" id="numbermale">0</p>
+							<p class="content number" id="numbermale" data-value="0">0</p>
 						</div>
 						<div class="compteur">
 							<p class="subtitle sex">F</p>
@@ -388,7 +390,7 @@
 						</div>
 					</div>
 					<div class="molettescontainer">
-						<div class="molette" data-nombre="numbermale">
+						<div class="molette" data-nombre="numbermale" id="molette1">
 							<img src="img/arrow.svg" class="toparrow" data-nombre="numbermale"></img>
 							<img src="img/scroll.svg" class="scroll"></img>
 							<img src="img/arrow.svg" class="downarrow" data-nombre="numbermale"></img>
