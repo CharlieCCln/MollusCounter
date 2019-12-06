@@ -28,7 +28,7 @@ body{
   margin-left: 50px;
   bottom: 0;
   margin-right: 50px;
-  padding-top: 175px;
+  padding-top: 100px;
   padding-left: 10px;
   padding-right: 10px;
   height:auto;
@@ -229,7 +229,6 @@ button:hover{
   bottom: 0;
   left: 0;
   right: 0;
-  overflow: hidden;
 }
 
 #reconnaitre{
