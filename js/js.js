@@ -103,7 +103,9 @@ $('#molette1').hammer(options).bind("panup", function(ev) {
   nombreElement.attr('data-value', nombre);
 
   nombreElement.text(Math.round(nombre));
-  window.navigator.vibrate(15);
+  if ("vibrate" in navigator){
+    window.navigator.vibrate(15);
+  }
 }).on('pandown', function(ev) {
   var nombreElement = $("#numbermale");
   var nombre = parseFloat(nombreElement.attr('data-value'));
@@ -113,7 +115,9 @@ $('#molette1').hammer(options).bind("panup", function(ev) {
   nombreElement.attr('data-value', nombre);
 
   nombreElement.text(Math.round(nombre));
-  window.navigator.vibrate(15);
+  if ("vibrate" in navigator){
+    window.navigator.vibrate(15);
+  }
 });
 
 $('#molette2').hammer(options).bind("panup", function(ev) {
@@ -125,7 +129,9 @@ $('#molette2').hammer(options).bind("panup", function(ev) {
   nombreElement.attr('data-value', nombre);
 
   nombreElement.text(Math.round(nombre));
-  window.navigator.vibrate(15);
+  if ("vibrate" in navigator){
+    window.navigator.vibrate(15);
+  }
 }).on('pandown', function(ev) {
   var nombreElement = $("#numberfemale");
   var nombre = parseFloat(nombreElement.attr('data-value'));
@@ -135,7 +141,9 @@ $('#molette2').hammer(options).bind("panup", function(ev) {
   nombreElement.attr('data-value', nombre);
 
   nombreElement.text(Math.round(nombre));
-  window.navigator.vibrate(15);
+  if ("vibrate" in navigator){
+    window.navigator.vibrate(15);
+  }
 });
 
 $('#molette3').hammer(options).bind("panup", function(ev) {
@@ -147,7 +155,9 @@ $('#molette3').hammer(options).bind("panup", function(ev) {
   nombreElement.attr('data-value', nombre);
 
   nombreElement.text(Math.round(nombre));
-  window.navigator.vibrate(15);
+  if ("vibrate" in navigator){
+    window.navigator.vibrate(15);
+  }
 }).on('pandown', function(ev) {
   var nombreElement = $("#numberherma");
   var nombre = parseFloat(nombreElement.attr('data-value'));
@@ -157,7 +167,9 @@ $('#molette3').hammer(options).bind("panup", function(ev) {
   nombreElement.attr('data-value', nombre);
 
   nombreElement.text(Math.round(nombre));
-  window.navigator.vibrate(15);
+  if ("vibrate" in navigator){
+    window.navigator.vibrate(15);
+  }
 });
 
 })
