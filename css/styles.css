@@ -235,7 +235,7 @@ button:hover{
   font-size: 20pt;
   margin-bottom: 10px;
   text-align: center;
-  margin-top: -100px;
+  margin-top: -25px;
 }
 
 #specieslistsubtitle{
@@ -327,7 +327,7 @@ button:hover{
 
 #huitretitle{
   font-size: 36pt;
-  margin-top: -100px;
+  margin-top: -25px;
 }
 
 #huitresubtitle{
@@ -367,7 +367,7 @@ button:hover{
 
 .peigneoperculetitle{
   font-size: 24pt;
-  margin-top: -100px;
+  margin-top: -25px;
 }
 
 #opercule{
@@ -402,7 +402,7 @@ button:hover{
 
 #turritelletitle{
   font-size: 30pt;
-  margin-top: -100px;
+  margin-top: -25px;
 }
 
 #turritellesubtitle{
@@ -433,7 +433,7 @@ button:hover{
 
 #prairetitle{
   font-size: 36pt;
-  margin-top: -100px;
+  margin-top: -25px;
 }
 
 #prairesubtitle{
@@ -470,7 +470,7 @@ button:hover{
 
 .comptagetitle{
   font-size: 30pt;
-  margin-top: -100px;
+  margin-top: -25px;
 }
 
 .renseignementssubtitle{
@@ -662,7 +662,7 @@ button:hover{
 
 .commentairestitle{
   font-size: 20pt;
-  margin-top: -100px;
+  margin-top: -25px;
 }
 
 .commentaires{
