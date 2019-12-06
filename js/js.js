@@ -80,6 +80,10 @@ $(document).ready(function(){
 
     $('#'+nombreElement).text(nombre);
   });
+  
+  $(document).on('touchmove', function() {
+  $(document).trigger('mousewheel');
+});
 
 })
 
