@@ -21,7 +21,6 @@ body{
 
 .app{
   height: auto;
-  -webkit-overflow-scrolling: touch;
 }
 
 .parent{
@@ -159,8 +158,13 @@ button:hover{
   overflow: hidden;
 }
 
+.startmenuparent{
+  margin-bottom: 0;
+  height: 100%;
+}
+
 .startmenudots{
-  margin-top: 150px;
+  margin-top: 100px;
   display: flex;
   justify-content: center;
   height: 295px;
@@ -458,7 +462,7 @@ button:hover{
   bottom: 0;
   left: 0;
   right: 0;
-  overflow:scroll;
+  overflow: scroll;
 }
 
 .renseignements{
@@ -600,6 +604,7 @@ button:hover{
 }
 
 .molettescontainer{
+  margin-top: -50px;
   width: 100%;
   display:flex;
   justify-content: space-between;
