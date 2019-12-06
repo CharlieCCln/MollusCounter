@@ -80,13 +80,21 @@ $(document).ready(function(){
 
     $('#'+nombreElement).text(nombre);
   });
-
+/*
   var hammertime = new Hammer(document.getElementById("molette1"), {});
 hammertime.get('pan').set({
   direction: Hammer.DIRECTION_ALL,
   threshold: 50,
-});
-hammertime.on('panup', function(ev) {
+});*/
+
+var options = {
+  recognizers: [
+		[Hammer.Pan,{ direction: Hammer.DIRECTION_ALL, threshold: 50 }],
+	]
+};
+
+
+$('#molette1').hammer(options).bind("panup", function(ev) {
   var nombreElement = $("#numbermale");
   var nombre = parseFloat(nombreElement.attr('data-value'));
   nombre+=0.225;
@@ -96,8 +104,7 @@ hammertime.on('panup', function(ev) {
 
   nombreElement.text(Math.round(nombre));
   window.navigator.vibrate(15);
-});
-hammertime.on('pandown', function(ev) {
+}).on('pandown', function(ev) {
   var nombreElement = $("#numbermale");
   var nombre = parseFloat(nombreElement.attr('data-value'));
   nombre-=0.225;
