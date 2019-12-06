@@ -89,7 +89,7 @@ hammertime.get('pan').set({
 hammertime.on('panup', function(ev) {
   var nombreElement = $("#numbermale");
   var nombre = parseFloat(nombreElement.attr('data-value'));
-  nombre+=0.125;
+  nombre+=0.225;
   nombre = Math.max(nombre, 0);
 
   nombreElement.attr('data-value', nombre);
@@ -100,7 +100,7 @@ hammertime.on('panup', function(ev) {
 hammertime.on('pandown', function(ev) {
   var nombreElement = $("#numbermale");
   var nombre = parseFloat(nombreElement.attr('data-value'));
-  nombre-=0.125;
+  nombre-=0.225;
   nombre = Math.max(nombre, 0);
 
   nombreElement.attr('data-value', nombre);
@@ -117,7 +117,7 @@ threshold: 50,
 hammertime.on('panup', function(ev) {
 var nombreElement = $("#numberfemale");
 var nombre = parseFloat(nombreElement.attr('data-value'));
-nombre+=0.125;
+nombre+=0.225;
 nombre = Math.max(nombre, 0);
 
 nombreElement.attr('data-value', nombre);
@@ -128,7 +128,7 @@ window.navigator.vibrate(15);
 hammertime.on('pandown', function(ev) {
 var nombreElement = $("#numberfemale");
 var nombre = parseFloat(nombreElement.attr('data-value'));
-nombre-=0.125;
+nombre-=0.225;
 nombre = Math.max(nombre, 0);
 
 nombreElement.attr('data-value', nombre);
@@ -146,7 +146,7 @@ threshold: 50,
 hammertime.on('panup', function(ev) {
 var nombreElement = $("#numberherma");
 var nombre = parseFloat(nombreElement.attr('data-value'));
-nombre+=0.125;
+nombre+=0.225;
 nombre = Math.max(nombre, 0);
 
 nombreElement.attr('data-value', nombre);
@@ -157,7 +157,7 @@ window.navigator.vibrate(15);
 hammertime.on('pandown', function(ev) {
 var nombreElement = $("#numberherma");
 var nombre = parseFloat(nombreElement.attr('data-value'));
-nombre-=0.125;
+nombre-=0.225;
 nombre = Math.max(nombre, 0);
 
 nombreElement.attr('data-value', nombre);
