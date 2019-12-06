@@ -116,64 +116,52 @@ $('#molette1').hammer(options).bind("panup", function(ev) {
   window.navigator.vibrate(15);
 });
 
-var hammertime = new Hammer(document.getElementById("molette2"), {});
-hammertime.get('pan').set({
-direction: Hammer.DIRECTION_ALL,
-threshold: 50,
-});
-hammertime.on('panup', function(ev) {
-var nombreElement = $("#numberfemale");
-var nombre = parseFloat(nombreElement.attr('data-value'));
-nombre+=0.225;
-nombre = Math.max(nombre, 0);
+$('#molette2').hammer(options).bind("panup", function(ev) {
+  var nombreElement = $("#numberfemale");
+  var nombre = parseFloat(nombreElement.attr('data-value'));
+  nombre+=0.225;
+  nombre = Math.max(nombre, 0);
 
-nombreElement.attr('data-value', nombre);
+  nombreElement.attr('data-value', nombre);
 
-nombreElement.text(Math.round(nombre));
-window.navigator.vibrate(15);
-});
-hammertime.on('pandown', function(ev) {
-var nombreElement = $("#numberfemale");
-var nombre = parseFloat(nombreElement.attr('data-value'));
-nombre-=0.225;
-nombre = Math.max(nombre, 0);
+  nombreElement.text(Math.round(nombre));
+  window.navigator.vibrate(15);
+}).on('pandown', function(ev) {
+  var nombreElement = $("#numberfemale");
+  var nombre = parseFloat(nombreElement.attr('data-value'));
+  nombre-=0.225;
+  nombre = Math.max(nombre, 0);
 
-nombreElement.attr('data-value', nombre);
+  nombreElement.attr('data-value', nombre);
 
-nombreElement.text(Math.round(nombre));
-window.navigator.vibrate(15);
+  nombreElement.text(Math.round(nombre));
+  window.navigator.vibrate(15);
 });
 
+$('#molette3').hammer(options).bind("panup", function(ev) {
+  var nombreElement = $("#numberherma");
+  var nombre = parseFloat(nombreElement.attr('data-value'));
+  nombre+=0.225;
+  nombre = Math.max(nombre, 0);
 
-var hammertime = new Hammer(document.getElementById("molette3"), {});
-hammertime.get('pan').set({
-direction: Hammer.DIRECTION_ALL,
-threshold: 50,
+  nombreElement.attr('data-value', nombre);
+
+  nombreElement.text(Math.round(nombre));
+  window.navigator.vibrate(15);
+}).on('pandown', function(ev) {
+  var nombreElement = $("#numberherma");
+  var nombre = parseFloat(nombreElement.attr('data-value'));
+  nombre-=0.225;
+  nombre = Math.max(nombre, 0);
+
+  nombreElement.attr('data-value', nombre);
+
+  nombreElement.text(Math.round(nombre));
+  window.navigator.vibrate(15);
 });
-hammertime.on('panup', function(ev) {
-var nombreElement = $("#numberherma");
-var nombre = parseFloat(nombreElement.attr('data-value'));
-nombre+=0.225;
-nombre = Math.max(nombre, 0);
-
-nombreElement.attr('data-value', nombre);
-
-nombreElement.text(Math.round(nombre));
-window.navigator.vibrate(15);
-});
-hammertime.on('pandown', function(ev) {
-var nombreElement = $("#numberherma");
-var nombre = parseFloat(nombreElement.attr('data-value'));
-nombre-=0.225;
-nombre = Math.max(nombre, 0);
-
-nombreElement.attr('data-value', nombre);
-
-nombreElement.text(Math.round(nombre));
-window.navigator.vibrate(15);});
-
 
 })
+
 
 function clickView(){
   $(".specieslist").show()
