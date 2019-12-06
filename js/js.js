@@ -80,10 +80,27 @@ $(document).ready(function(){
 
     $('#'+nombreElement).text(nombre);
   });
-  
-  $(document).on('touchmove', function() {
-  $(document).trigger('mousewheel');
+
+  var hammertime = new Hammer(document.getElementById("molette1"), {});
+hammertime.get('pan').set({
+  direction: Hammer.DIRECTION_ALL,
+  threshold: 50,
 });
+hammertime.on('panup', function(ev) {
+  var nombreElement = $("#numbermale");
+  console.log(nombreElement);
+  var nombre = parseFloat(nombreElement.attr('data-value'));
+  nombre+=0.2;
+  nombre = Math.max(nombre, 0);
+
+  nombreElement.attr('data-value', nombre);
+
+  nombreElement.text(Math.round(nombre));
+});
+hammertime.on('pandown', function(ev) {
+	console.log(ev);
+});
+
 
 })
 
