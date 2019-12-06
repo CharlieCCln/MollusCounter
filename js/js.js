@@ -95,6 +95,7 @@ hammertime.on('panup', function(ev) {
   nombreElement.attr('data-value', nombre);
 
   nombreElement.text(Math.round(nombre));
+  window.navigator.vibrate(15);
 });
 hammertime.on('pandown', function(ev) {
   var nombreElement = $("#numbermale");
@@ -105,6 +106,7 @@ hammertime.on('pandown', function(ev) {
   nombreElement.attr('data-value', nombre);
 
   nombreElement.text(Math.round(nombre));
+  window.navigator.vibrate(15);
 });
 
 var hammertime = new Hammer(document.getElementById("molette2"), {});
@@ -121,6 +123,7 @@ nombre = Math.max(nombre, 0);
 nombreElement.attr('data-value', nombre);
 
 nombreElement.text(Math.round(nombre));
+window.navigator.vibrate(15);
 });
 hammertime.on('pandown', function(ev) {
 var nombreElement = $("#numberfemale");
@@ -130,7 +133,9 @@ nombre = Math.max(nombre, 0);
 
 nombreElement.attr('data-value', nombre);
 
-nombreElement.text(Math.round(nombre));});
+nombreElement.text(Math.round(nombre));
+window.navigator.vibrate(15);
+});
 
 
 var hammertime = new Hammer(document.getElementById("molette3"), {});
@@ -147,6 +152,7 @@ nombre = Math.max(nombre, 0);
 nombreElement.attr('data-value', nombre);
 
 nombreElement.text(Math.round(nombre));
+window.navigator.vibrate(15);
 });
 hammertime.on('pandown', function(ev) {
 var nombreElement = $("#numberherma");
@@ -156,7 +162,8 @@ nombre = Math.max(nombre, 0);
 
 nombreElement.attr('data-value', nombre);
 
-nombreElement.text(Math.round(nombre));});
+nombreElement.text(Math.round(nombre));
+window.navigator.vibrate(15);});
 
 
 })
