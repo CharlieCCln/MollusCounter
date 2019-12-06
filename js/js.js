@@ -90,7 +90,7 @@ hammertime.on('panup', function(ev) {
   var nombreElement = $("#numbermale");
   console.log(nombreElement);
   var nombre = parseFloat(nombreElement.attr('data-value'));
-  nombre+=0.2;
+  nombre+=0.75;
   nombre = Math.max(nombre, 0);
 
   nombreElement.attr('data-value', nombre);
@@ -98,8 +98,75 @@ hammertime.on('panup', function(ev) {
   nombreElement.text(Math.round(nombre));
 });
 hammertime.on('pandown', function(ev) {
-	console.log(ev);
+  var nombreElement = $("#numbermale");
+  console.log(nombreElement);
+  var nombre = parseFloat(nombreElement.attr('data-value'));
+  nombre-=0.75;
+  nombre = Math.max(nombre, 0);
+
+  nombreElement.attr('data-value', nombre);
+
+  nombreElement.text(Math.round(nombre));});
+
+
+})
+
+var hammertime = new Hammer(document.getElementById("molette2"), {});
+hammertime.get('pan').set({
+direction: Hammer.DIRECTION_ALL,
+threshold: 50,
 });
+hammertime.on('panup', function(ev) {
+var nombreElement = $("#numberfemale");
+console.log(nombreElement);
+var nombre = parseFloat(nombreElement.attr('data-value'));
+nombre+=0.75;
+nombre = Math.max(nombre, 0);
+
+nombreElement.attr('data-value', nombre);
+
+nombreElement.text(Math.round(nombre));
+});
+hammertime.on('pandown', function(ev) {
+var nombreElement = $("#numberfemale");
+console.log(nombreElement);
+var nombre = parseFloat(nombreElement.attr('data-value'));
+nombre-=0.75;
+nombre = Math.max(nombre, 0);
+
+nombreElement.attr('data-value', nombre);
+
+nombreElement.text(Math.round(nombre));});
+
+
+})
+
+var hammertime = new Hammer(document.getElementById("molette3"), {});
+hammertime.get('pan').set({
+direction: Hammer.DIRECTION_ALL,
+threshold: 50,
+});
+hammertime.on('panup', function(ev) {
+var nombreElement = $("#numberherma");
+console.log(nombreElement);
+var nombre = parseFloat(nombreElement.attr('data-value'));
+nombre+=0.75;
+nombre = Math.max(nombre, 0);
+
+nombreElement.attr('data-value', nombre);
+
+nombreElement.text(Math.round(nombre));
+});
+hammertime.on('pandown', function(ev) {
+var nombreElement = $("#numberherma");
+console.log(nombreElement);
+var nombre = parseFloat(nombreElement.attr('data-value'));
+nombre-=0.75;
+nombre = Math.max(nombre, 0);
+
+nombreElement.attr('data-value', nombre);
+
+nombreElement.text(Math.round(nombre));});
 
 
 })
