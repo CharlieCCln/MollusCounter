@@ -618,6 +618,7 @@ button:hover{
   margin-bottom: 25px;
   left: 0;
   right: 0;
+  touch-action:none !important;
 }
 
 .toparrow, .downarrow, .scroll{
